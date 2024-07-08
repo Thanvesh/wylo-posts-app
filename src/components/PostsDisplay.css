@@ -3,12 +3,13 @@
   max-height:auto ;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 5%, rgba(98,204,208,1) 47%, rgba(9,9,121,1) 99%);
     background-size: 100% 100%;
     animation: gradientBackground 15s ease infinite;
-  
+  gap:50px;
 }
 @keyframes gradientBackground {
   0% { background-position: 0% 50%; }
