@@ -46,7 +46,7 @@ const PostItem = ({ post, onEdit, onDelete }) => {
       <p>{post.content}</p>
       <div className='content-file'>
         {post.images && post.images.map((image, index) => (
-          <img key={index} src={image} alt={`Post Image ${index}`} className="post-image" />
+          <img key={index} src={image} alt={`Post ${index}`} className="post-image" />
         ))}
       </div>
       <div className='content-file'>
