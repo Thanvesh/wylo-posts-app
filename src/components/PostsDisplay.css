@@ -1,0 +1,51 @@
+.container{
+  min-height: 100vh;
+  max-height:auto ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 5%, rgba(98,204,208,1) 47%, rgba(9,9,121,1) 99%);
+    background-size: 100% 100%;
+    animation: gradientBackground 15s ease infinite;
+  
+}
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.posts-display {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  gap: 20px;/* Center horizontally */
+ 
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Ensure the button is styled nicely */
+button {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 15px;
+  border: 2px solid #ffffff;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #83f5bc;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

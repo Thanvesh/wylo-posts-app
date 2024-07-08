@@ -1,0 +1,113 @@
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+
+  
+  .post-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    max-width: 400px;
+    height:400px ;
+    width: 100%;
+    box-sizing: border-box;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .content-file {
+    object-fit: contain; /* Ensures the image maintains aspect ratio and fits within the div */
+    height: 50%; /* Limits the height to 100% of its container */
+ /* Ensures the image or video spans the full width of its container */
+  }
+  .menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .post-menu {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex; /* Initially hide the menu */
+    flex-direction: column;
+    border: 1px dashed #000000;
+  }
+  
+  .post-menu button {
+    background: none;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    text-align: center;
+    color:#000000;
+  }
+    
+  .post-menu button:hover {
+    background-color: #ed7777;
+  }
+
+
+
+.post-image,
+.post-video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* Ensures the image or video fills the container while maintaining aspect ratio */
+  margin: 10px 0; /* Adds spacing around the media */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.post-item:hover .post-image,
+.post-item:hover .post-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto; /* Allow the image to expand */
+  height: auto;
+  max-width: 100%; /* Limit maximum size to the card width */
+  max-height: 100%; /* Limit maximum size to the card height */
+  transform: scale(0.95); /* Scale up the image on hover for zoom effect */
+  z-index: 1; /* Ensure the hovered image appears above other elements */
+}
+  
+
+  
+
+  @media (max-width: 600px) {
+    .post-item {
+      margin: 10px auto;
+      padding: 15px;
+    }
+  }
+  
