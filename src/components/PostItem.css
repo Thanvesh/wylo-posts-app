@@ -20,6 +20,7 @@
     width: 100%;
     box-sizing: border-box;
     animation: float 3s ease-in-out infinite;
+    overflow: auto;
   }
   
   .post-header {
