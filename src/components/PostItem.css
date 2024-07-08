@@ -83,7 +83,7 @@
 .post-video {
   width: 100%;
   height: 100%;
-  object-fit: fill; /* Ensures the image or video fills the container while maintaining aspect ratio */
+  object-fit: contain; /* Ensures the image or video fills the container while maintaining aspect ratio */
   margin: 10px 0; /* Adds spacing around the media */
   transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
