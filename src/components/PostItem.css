@@ -89,8 +89,8 @@
   transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
-.post-item:hover .post-image,
-.post-item:hover .post-video {
+ .post-image:hover,
+ .post-video:hover{
   position: absolute;
   top: 0;
   left: 0;
